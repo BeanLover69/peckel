@@ -17,7 +17,7 @@ int option(char *str)
 }
 
 int main(int argc, char *argv[]) {
-        	if (*argv[i] == '-') {
+          if (*argv[0] == '-') {
         	    option(argv[i] + 1);
 	  }
     	  signal(SIGINT, SIG_IGN);
