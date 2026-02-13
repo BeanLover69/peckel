@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <X11/Xlib.h>
-int main() {
+int main(int argc, char *argv[]) {
     bool Running = true;
     XEvent event;
     Display* dis = XOpenDisplay(NULL);
