@@ -9,18 +9,16 @@ void option(char *str);
 
 void option(char *str)
 {
-	char *happy = "happy";
+	char *happy = "-help";
 	if (*str == *happy) {
+		printf("Hello!\nThis Command is an Entertainment Tool\nand only things you can do with it is to type peckel -Emotion replace Emotion\nwith the Emotion wished for for the Character");
+		return 0;
 	}
 }
 
 int main(int argc, char *argv[]) {
-	  int x, i;
-	
-    	  for (i = 1; i < argc; ++i) {
         	if (*argv[i] == '-') {
         	    option(argv[i] + 1);
-        	}
 	  }
     	  signal(SIGINT, SIG_IGN);
   	  bool Running = true;
