@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <X11/Xlib.h>
 
-void option(char *str)
+void option(char *str);
 
 void option(char *str)
 {
