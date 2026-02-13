@@ -6,5 +6,15 @@
 #	      Last Modified: 2026/02/12
 #==========================================
 
-peckel.out: peckel.c
-	gcc peckel.c -o peckel.out -lX11
+CC=gcc
+CFLAGS=-O -Wall
+
+all: peckel
+
+peckel: peckel.c
+	$(CC) $(CFLAGS) -o sl sl.c -lX11
+
+clean:
+	rm -f peckel
+
+distclean: clean
